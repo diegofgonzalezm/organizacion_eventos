@@ -1,0 +1,24 @@
+.tefecto{
+    width: 100%;
+    height: 100 vh;
+    position: relative;
+}
+.tefecto video {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.titulo {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background: black;
+    font-size: 100px;
+    color: #fff;
+    mix-blend-mode: multiply;
+   
+}
