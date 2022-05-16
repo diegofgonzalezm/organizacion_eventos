@@ -1,4 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+/*Top nav*/
+.top-nav{
+    background-color: black;
+    color: white;
+    font-family:'Comfortaa', cursive;;
+}
+.call{
+    text-decoration:none;
+    color: white;
+}
+.call:hover{
+    text-decoration: none;
+    background-color: #198754;
+    color: white;
+}
+.mail{
+    text-decoration:none;
+    color: white;
+}
+.mail:hover{
+    text-decoration: none;
+    background-color: #198754;
+    color: white;
+    
+}
+
 /* Header */
 
 ::-webkit-scrollbar{
@@ -175,6 +201,9 @@ input::-webkit-input-placeholder { /* Chrome/Opera/Safari*/
   input:-moz-placeholder { /* Firefox 18-*/
     color: #e5e5e5;
     font-size: 16px;
+  }
+  .log:hover{
+      color: #198754;
   }
   
   /* Responsive */

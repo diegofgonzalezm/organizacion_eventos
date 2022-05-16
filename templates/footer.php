@@ -1,13 +1,15 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
  <link rel="stylesheet" href="css/index.css">
-<footer class="text-center text-white" style="background-color: #f1f1f1;">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ <footer class="text-center text-white" style="background-color: black;">
   <!-- Grid container -->
   <div class="container pt-4">
     <!-- Section: Social media -->
     <section class="mb-4">
       <!-- Facebook -->
       <a
-        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        class="btn btn-link btn-floating btn-lg text-white m-1"
         href="#!"
         role="button"
         data-mdb-ripple-color="dark"
@@ -16,16 +18,16 @@
 
       <!-- Twitter -->
       <a
-        class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="#!"
+        class="btn btn-link btn-floating btn-lg text-white m-1"
+        href="https://twitter.com/2DiegoGonzalez"
         role="button"
         data-mdb-ripple-color="dark"
-        ><i class="fab fa-twitter"></i
-      ></a>
+        ><i class="fa-brands fa-twitter"></i>
+      </a>
 
       <!-- Google -->
       <a
-        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        class="btn btn-link btn-floating btn-lg text-white m-1"
         href="#!"
         role="button"
         data-mdb-ripple-color="dark"
@@ -34,25 +36,17 @@
 
       <!-- Instagram -->
       <a
-        class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="#!"
+        class="btn btn-link btn-floating btn-lg text-white m-1"
+        href="https://www.instagram.com/diegofgonzalezm/"
         role="button"
         data-mdb-ripple-color="dark"
         ><i class="fab fa-instagram"></i
       ></a>
 
-      <!-- Linkedin -->
-      <a
-        class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="#!"
-        role="button"
-        data-mdb-ripple-color="dark"
-        ><i class="fab fa-linkedin"></i
-      ></a>
       <!-- Github -->
       <a
-        class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="#!"
+        class="btn btn-link btn-floating btn-lg text-white m-1"
+        href="https://github.com/diegofgonzalezm"
         role="button"
         data-mdb-ripple-color="dark"
         ><i class="fab fa-github"></i
@@ -62,9 +56,9 @@
   </div>
   <!-- Grid container -->
   <!-- Copyright -->
-  <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+  <div class="text-center text-white p-1" style="background-color: rgba(0, 0, 0, 0.2);">
       © 2022 Copyright:
-      <a class="text-dark" href="https://web.facebook.com/diegofgonzalezm">Diego González</a>
+      <a class="text-white" href="https://web.facebook.com/diegofgonzalezm">Diego González</a>
   </div>
   <!-- Copyright -->
 </footer>

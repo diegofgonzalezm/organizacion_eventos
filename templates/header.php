@@ -1,3 +1,18 @@
+<nav class="top-nav">
+<div class="container">
+  <div class="row">
+    <div class="col-4 text-center">
+     CONTACTO
+    </div>
+    <div class="col-4 text-center">
+        <a class="call" href="tel: +57 3166195171"><i class="fa-solid fa-phone"></i> Llamanos </a>
+    </div>
+    <div class="col-4 text-center">
+    <a class="mail" href="mailto:diegogm122@gmail.com?Subject=Necesito%20soporte%20en%20algo"><i class="fa-solid fa-envelope"></i> Contactar por correo </a>
+    </div>
+  </div>
+</div>
+</nav>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <!-- Container wrapper -->
     <div class="container-fluid">
@@ -11,7 +26,7 @@
             <!-- Left links -->
             <ul class="navbar-nav mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="index.php">Inicio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Politicas</a>
@@ -29,18 +44,10 @@
                     </a>
                     <!-- Dropdown menu -->
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li>
-                            <a class="dropdown-item" href="#">Configuración</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">Configuración</a>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider" />
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">Cerrar sesión</a>
-                        </li>
+                        <li><a class="dropdown-item" href="#">Configuración</a></li>
+                        
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
                     </ul>
                 </li>
             </ul>
