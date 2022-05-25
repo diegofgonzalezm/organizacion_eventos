@@ -1,11 +1,5 @@
-<link rel="icon" type="image/x-icon" href="image/logotipo.png">
-<link rel="stylesheet" href="css/index.css">
-
-<body class="forms">
-	<header>
-		<?php include("templates/header.php"); ?>
-	</header>
-	<section>
+<?php include("templates/header.php"); ?>
+	<section class="forms">
 		<div class="pag-contenedor">
 			<div class="forms-content" style="background-image: url('image/banner-form.jpg'); background-size:100% 100%">
 				<form class="form-detalles" action="#" method="post">
@@ -30,16 +24,13 @@
 						<input type="submit" name="register" class="register" value="Registrar">
 					</div>
 					<div class="text-form">¿Ya tienes una cuenta?
-					<a class="log" href="login.php">Inicia sesión</a>
-				</div>
+						<a class="log" href="login.php">Inicia sesión</a>
+					</div>
 				</form>
-				
+
 			</div>
 		</div>
 	</section>
 	<footer class="text-center text-white" style="background-color: #000;">
 		<?php include("templates/footer.php"); ?>
 	</footer>
-</body>
-
-</html>
