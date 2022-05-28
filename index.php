@@ -1,4 +1,5 @@
-        <?php include("templates/header.php"); ?>
+
+    <?php include("templates/header.php"); ?>
    
     <section class="tefecto">
     <h1 class="titulo">EVENTOS</h1>
