@@ -1,20 +1,25 @@
 <?php
+require ('templates/header.php');
 
+////////////// Actualizar la tabla /////////
+$consulta = "UPDATE users SET `name`= :name, `email` = :email WHERE `id` = :id";
+$sql = $conn->prepare($consulta);
+$sql->bindParam(':name',$name,PDO::PARAM_STR, 25);
+$sql->bindParam(':email',$email,PDO::PARAM_STR, 25);
+$sql->execute();
 
-include('templates/header.php');
+if($sql->rowCount() > 0)
+{
+$count = $sql -> rowCount();
+echo "<div class='content alert alert-primary' > 
 
-require 'cliente.php';
+  
+Gracias: $count registro ha sido actualizado  </div>";
+}
+else{
+    echo "<div class='content alert alert-danger'> No se pudo actulizar el registro  </div>";
 
-    $id = $_POST['id'];
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $password = $POST['password'];
-
-require 'database.php';
-
- $sql = "UPDATE `users` SET  `name`= '$name', `email`='$email',`password`='$password' WHERE `id` = $id;";
-      
- 
-    
+print_r($sql->errorInfo()); 
+}
 
 ?>

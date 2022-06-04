@@ -1,25 +1,23 @@
-
 <?php
 
-  session_start();
+session_start();
 
-  require 'database.php';
+require 'database.php';
 
-  if (isset($_SESSION['user_id'])) {
-    $records = $conn->prepare('SELECT id, name, email, password FROM users WHERE id = :id');
+if (isset($_SESSION['user_id'])) {
+    $records = $conn->prepare('SELECT id, name, email, password, cpassword FROM users WHERE id = :id');
     $records->bindParam(':id', $_SESSION['user_id']);
     $records->execute();
     $results = $records->fetch(PDO::FETCH_ASSOC);
 
     $user = null;
-  
+
 
     if (count($results) > 0) {
-      $user = $results;
-
+        $user = $results;
     }
 }
-  
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -41,7 +39,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-4 text-center">
-                    CONTACTO
+                   CONTACTO
                 </div>
                 <div class="col-4 text-center">
                     <a class="call" href="tel: +57 3166195171"><i class="fa-solid fa-phone"></i> Llamanos </a>
@@ -61,6 +59,7 @@
             </button>
 
             <!-- Collapsible wrapper -->
+            <a href="index.php"><img src="image/logotipo.png" alt="" height="25px"  href="index.php"> </a>
             <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
                 <!-- Left links -->
                 <ul class="navbar-nav mb-2 mb-lg-0">
@@ -71,33 +70,37 @@
                         <a class="nav-link" href="#">Politicas</a>
                     </li>
                     <li class="nav-item">
-                        <?php if (!empty($user)) : ?>                            
-                                        <!-- Navbar dropdown -->
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Bienvenid@. <b><?= $user['name']; ?></b>
-                                    </a>
-                                    <!-- Dropdown menu -->
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <li><a class="dropdown-item" href="#">Configuración</a></li>
+                        <?php if (!empty($user)) : ?>
+                            <!-- Navbar dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Bienvenid@. <b><?= $user['name']; ?></b>
+                        </a>
+                        <!-- Dropdown menu -->
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class=" config dropdown-item" href="cliente.php">Configuración</a></li>
 
-                                        <li>
-                                            <hr class="dropdown-divider" />
-                                        </li>
-                                        <li><a href="logout.php" class="dropdown-item">Cerrar sesión</a></li>
-                                    </ul>
-                                </li>
-                                    <?php else : ?>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a href="logout.php" class=" config dropdown-item">Cerrar sesión</a></li>
+                        </ul>
+                    </li>
+                <?php else : ?> 
 
                     <li class="nav-item">
                         <button type="button" class="btn btn-success"> <a class="btn-is" href="login.php" style="text-decoration:none">Inicia sesión</a></button>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="form.php">Registro</a>
                     <?php endif; ?>
-
                 </ul>
                 <!-- Left links -->
             </div>
+
+             <!-- <input type="search" name="" placeholder="Eventos">
+             <i class="fa-solid fa-magnifying-glass"></i> -->
+
+             
             <!-- Collapsible wrapper -->
         </div>
         <!-- Container wrapper -->
