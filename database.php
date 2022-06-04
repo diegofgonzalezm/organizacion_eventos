@@ -1,8 +1,8 @@
 <?php
-$server = 'localhost';
-$username = 'root';
-$password = '';
-$database = 'organizacion';
+$server = ' mysql-organizacion-eventos.alwaysdata.net';
+$username = '271737_admin';
+$password = 'Santiago.27';
+$database = 'organizacion-eventos_users';
 
 try {
   $conn = new PDO("mysql:host=$server;dbname=$database;", $username, $password);
