@@ -348,15 +348,16 @@ input:-moz-placeholder {
     font-weight: bold;
     text-align: center;
 }
-.send_date{
+.send_d{
+    text-align: center;
     border-color:white;
     background-color: #198754;
     color:#fff;
-    text-align: center;
     font-size: 25px;
 }
 
 .box-inf{
+    text-align: center;
     font-size: 20px;
 }
 
@@ -393,7 +394,7 @@ input:-moz-placeholder {
     background: linear-gradient(to right, #fff 20%, #fff 40%, #198754 50%, #198754 55%, #fff 70%, #fff 100%);
     background-size: 200% auto;
     
-    animation: shine 3s linear infinite;
+    animation: shine 2s linear infinite;
   }
   
   /*Begin shimmer code*/
