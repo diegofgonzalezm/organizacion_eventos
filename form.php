@@ -9,7 +9,8 @@ if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['password
 	$stmt->bindParam(':email', $_POST['email']);
 	$password = password_hash($_POST['password'], PASSWORD_BCRYPT);
 	$stmt->bindParam(':password', $password);
-	$stmt->bindParam(':cpassword', $_POST['cpassword']);
+	$cpassword = password_hash($_POST['cpassword'], PASSWORD_BCRYPT);
+	$stmt->bindParam(':cpassword', $password);
 
 	if ($stmt->execute()) {
 		$message = 'Usuario creado correctamente';
@@ -44,10 +45,10 @@ if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['password
 				</div>
 				<div class="form-row-total">
 					<div class="form-row">
-						<input type="password" name="password" id="password" class="input-text" placeholder="Contraseña" required>
+						<input type="password" pattern="[a-z]{1,15}" name="password" title="La contraseña debe contener minusculas y un rango no mayor a 15 caracteres" id="password" class="input-text" placeholder="Contraseña" required>
 					</div>
 					<div class="form-row">
-						<input type="password" name="cpassword" id="comfirm-password" class="input-text" placeholder="Confirmar contraseña" required>
+						<input type="password" pattern="[a-z]{1,15}" name="cpassword" title="Las contraseñas no coinciden" id="comfirm-password" class="input-text" placeholder="Confirmar contraseña" required>
 					</div>
 				</div>
 				<div class="form-row-last">

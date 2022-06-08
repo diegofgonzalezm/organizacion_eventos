@@ -59,7 +59,7 @@ if (isset($_SESSION['user_id'])) {
             </button>
 
             <!-- Collapsible wrapper -->
-            <a href="index.php"><img src="image/logotipo.png" alt="" height="25px"  href="index.php"> </a>
+            <a href="index.php"><img src="image/logotipo.png" alt="" height="25px"> </a>
             <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
                 <!-- Left links -->
                 <ul class="navbar-nav mb-2 mb-lg-0">
@@ -73,7 +73,7 @@ if (isset($_SESSION['user_id'])) {
                         <?php if (!empty($user)) : ?>
                             <!-- Navbar dropdown -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Bienvenid@. <b><?= $user['name']; ?></b>
                         </a>
                         <!-- Dropdown menu -->

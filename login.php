@@ -72,8 +72,9 @@
                                         <p><?= $message ?></p>
                                     <?php endif; ?>
 
-                                    <p class="mb-5 pb-lg-2" style="color: #393f81;">No tienes una cuenta?
-                                        <a class="log-i" href="form.php">Registrate aquí</a>
+                                    <p class="mb-5 pb-lg-2" style="color: #393f81;">No tienes una cuenta? | 
+                                        <a class="log-i" href="form.php">Registrate aquí</a> <br>
+                                        <!-- <a class="log-i">¿Olvidaste tu contraseña?</a> -->
                                     </p>
                                     <a href="#!" class="small text-muted">Terminos y condiciones | </a>
                                     <a href="#!" class="small text-muted">Politicas y privacidad</a>

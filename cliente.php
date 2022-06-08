@@ -15,10 +15,12 @@ if (!empty($user)) : ?>
         <div class="d_users">
           <p><b>Mi nombre es:</b><br><input class="box-inf" type="text" value="<?= $user['name']; ?>" name="name"></p>
           <p><b>Mi correo es:</b><br><input class="box-inf" type="text" value="<?= $user['email']; ?>" name="email"></p>
-          <p><b>Mi contraseña es:</b><br><input class="box-inf" type="text" value="<?= $user['cpassword']; ?>" name="cpassword"></p>
+          <p><b>Mi contraseña es:</b><br><input class="box-inf" type="password" value="<?= $user['cpassword']; ?>" name="cpassword"></p>
         </div>
           <!-- Botón de envío de formulario -->
-          <input class="send_d" type="submit" value="Actualizar"/>
+          <div class="send_d">
+            <input class="send_d-input" type="submit" value="Actualizar"/>
+          </div>
 
       </form>
     </div>

@@ -348,8 +348,12 @@ input:-moz-placeholder {
     font-weight: bold;
     text-align: center;
 }
+
 .send_d{
-    text-align: center;
+    display:flex ;
+    justify-content: center;
+}
+.send_d-input{
     border-color:white;
     background-color: #198754;
     color:#fff;

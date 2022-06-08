@@ -1,8 +1,8 @@
 <?php
-$server = 'localhost';
-$username = 'root';
-$password = '';
-$database = 'organizacion';
+$server = 'mysql-organizacion-eventos.alwaysdata.net';
+$username = '271737_admin';
+$password = 'Rubi.2002';
+$database = 'organizacion-eventos_a';
 
 try {
 
